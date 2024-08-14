@@ -1,22 +1,13 @@
-import { useRouter } from "next/router";
-import styles from "@/styles/404.module.scss";
+import Link from "next/link";
 
-const NotFound = () => {
-  const router = useRouter();
-
-  const handleRedirect = () => {
-    router.push("/");
-  };
-
+export default function NotFound() {
   return (
-    <div className={styles.container}>
-      <h1>404 - Esta página no existe</h1>
-      <p>Parece que la página que estás buscando no está disponible.</p>
-      <button onClick={handleRedirect} className={styles.button}>
-        Volver a la página principal
-      </button>
+    <div className="not-found-container">
+      <h2>404</h2>
+      <p>Ruta no encontrada 🥲</p>
+      <p>
+        Volve a la <Link href="/">Pagina principal</Link>
+      </p>
     </div>
   );
-};
-
-export default NotFound;
+}

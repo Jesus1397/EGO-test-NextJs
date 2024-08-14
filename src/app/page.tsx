@@ -97,7 +97,3 @@ export default function Home() {
     </>
   );
 }
-
-// usar el archivo de loding pordafault
-// icono
-// routas por default

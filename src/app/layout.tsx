@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <link rel="icon" href="/Ego-logo.svg" sizes="any" />
+      </head>
       <body className={montserrat.className}>
         <Navbar />
         {children}

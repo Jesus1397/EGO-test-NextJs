@@ -22,6 +22,16 @@ footer {
   max-height: 100vh;
 }
 
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
 @media (max-width: 992px) {
   footer {
     margin-top: 30px;
